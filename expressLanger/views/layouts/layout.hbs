@@ -1,0 +1,487 @@
+<!doctype html>
+<html  ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Welcome to H.A. Langer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--angular-->
+        <script src="bower_components/angular/angular.min.js"></script>
+        <!--ui router-->
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <!--ui router styles-->
+        <script src="bower_components/angular-ui-router-styles/ui-router-styles.js"></script>
+        
+
+        <!-- index styles -->
+        <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="stylesheets/apartment-style.css">
+        <link rel="stylesheet" href="stylesheets/lightbox.css">
+        
+        <!-- angularjs -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+       
+        <style>
+
+        .logo-frame img {
+            width: 50%;
+        }
+
+        .logo-section {
+
+        }
+        #please .footer {
+            margin: 0px 0px 0px 0px;
+        }
+.footer {
+  font-size: 12px;
+  background-color: white;
+  color: rgb(101, 0, 0);
+  height: 100%; }
+        .logo-frame {
+            text-align: center;
+        }
+            nav {
+               margin-top: 20px;
+            }
+            .active {
+                border: 2px solid rgb(101, 0, 0);
+                border-bottom: none;
+            }
+
+            .container1 a:hover {
+                color: green;
+            }
+            
+            .container1 a:active {
+                /*background-color: red;*/
+            }
+            li {
+                list-style: none;
+                display: inline-block;
+                border: 1px solid #aaa;
+                border-bottom: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            
+            ul {
+                margin: 0px;
+            }
+           
+            
+           
+            .menu-style-none {
+                display: none;
+            }
+            
+            .menu-style {
+                
+                height: 420px;
+                background-color: rgb(101, 0, 0);
+                width: 100%;
+                color: white;
+                font-size: 10px;
+                display: flex;
+                padding: 2em;
+                flex-direction: row;
+            }
+
+            .navigation-hidden {
+                display: none;
+            }
+
+             .navigation-fixed {
+                /*max-width: 75vw;*/
+                line-height: 1.5;
+                border-bottom: 1px solid rgb(101, 0, 0);
+                display: flex;
+                font-size: 12px;
+                position: fixed;
+                top: -20px;
+                z-index: 15000;
+                background-color: white;
+                
+            }
+
+           
+
+            #menu {
+                position: fixed;
+                
+                z-index: 15000;
+                background-color: rgb(101, 0, 0);
+                width: 100vw;
+            }
+
+            nav li {
+                background-color: white;
+            }
+
+           .main-content {
+            position: relative;
+            /*background-color: green;*/
+           }
+
+           .gallery-container {
+                display: flex;
+                height: 200px;
+                flex-wrap: wrap;
+           }
+
+           
+            
+           .apartment-panel {
+            font-weight: 800;
+           }
+
+           .gallery-item {
+            font-size: 12px;
+            width: 200px;
+           }
+
+           .apartmentRight {
+            color: #aeaeae;
+           }
+
+           .navRightBorder {
+            border-right: 10px solid rgb(101, 0, 0);
+
+           }
+
+    
+    ul {
+        padding-left: 0px;
+        line-height: .5;
+
+    }
+
+    ul li h3 {
+        padding-left: 5px;
+    }
+
+    .sidebar-apartments li {
+        font-family: 'Crimson Text', sans-serif;
+        color: #aeaeae;
+    }
+
+    .properties-section .sidebar-apartments:last-child {
+  border-bottom: 1px solid #ECEBEB; }
+
+        .a {
+            border-top: 1px solid #ECEBEB;
+        }   
+
+
+        .navctrl
+             {
+                /*border: 5px solid yellow;*/
+                background-color: white;
+             }
+
+             #navigation {
+                width: 100%;
+                line-height: 1.5;
+                border-bottom: 1px solid rgb(101, 0, 0);
+                display: flex;
+             }
+
+             #nav-menu li{
+                font-size: 24px;
+                line-height: 1.5;
+                /*border: 5px solid green;*/
+
+             }
+
+             #nav-menu li a{
+                padding: 5px;
+             }
+
+             .main-content {
+             /* border: 5px solid purple;*/
+             }
+
+             .a:hover {
+                color: rgb(101, 0, 0);
+                border-right: 10px solid rgb(101, 0, 0);
+
+             }
+
+            
+
+             /*NAV MENU*/
+            a:hover {
+              color: rgb(101, 0, 0);  
+            }
+
+            
+            .col a {
+                color: #aeaeae;
+            }
+
+            .col a:hover {
+                color: rgb(101, 0, 0);
+            }
+
+.a {
+  width: 100%;
+  max-height: 40px;
+}
+
+@media only screen and (max-width: 499px) {
+    #please {
+        border: 0px;
+    }
+    .footer {
+        padding: 10px 10px 10px 10px;
+       }
+    }
+
+
+
+
+        </style>
+        <script src="js/app.js"></script>
+        <script src="js/navController.js"></script>
+        <script src="controllers/mapController.js"></script>
+        <script src="controllers/amenitiesLandingPageTemplateController.js"></script>
+        <script src="controllers/apartmentLandingPageTemplateController.js"></script>
+        <script src="controllers/apartmentSizeController.js"></script>
+        <script src="controllers/apartmentLandingPageTemplateController.js"></script>
+        <script src="js/contactMenuController.js"></script>
+        <script src="controllers/floorplanController.js"></script>
+        <script src="controllers/apartmentDetailsController.js"></script>
+        <script src="controllers/floorplanController.js"></script>
+        <script src="controllers/FormController.js"></script>
+        <script src="controllers/entertainmentController.js"></script>
+        <script src="js/floorplan-factory.js"></script>
+        <script src="js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+        <script src="js/floorplanFilter.js"></script>
+        <script src="js/sideController.js"></script>
+        <script src="js/featureController.js"></script>
+
+        <script src="services/pagerService.js"></script>
+        
+    </head>
+    <body>
+        <div class="site-wrapper" style="border: 5px solid green;">
+            <div id ="cover" class="no-overlay" onclick="overlayHide()"></div>
+            <header style="border-bottom: 1px solid white;">
+                
+                <div class="" onclick="toggleSidebar()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <!--<div class="brand">{{apartmentNameNavMobile}}</div>-->
+                <a ui-sref="floorplans"><div class="brand" style="padding-top: 7px;"><img height="50" width="50" src="img/icons/floorplan-icon.png"></div></a>
+
+
+                <a ui-sref="appointment"><button style="background-color: green;">apply</button></a>
+                <a ui-sref="contact"><button style="background-color: #003059;">contact</button></a>
+                
+                <!--Second option logo -->
+                <!--/home/mike/Desktop/LangerApplication/LangerApplication/img/logo/logoAnna.jpeg-->
+                
+            </header>
+            <div id="please" style="width: 225px;" class="side-bar-container" ng-controller="sideController">
+                <div class ="side-bar" style="border: 7px solid blue; overflow-y: scroll;">
+                    <!--logo section-->
+                            <div style="display: flex; justify-content: center; border: 5px solid yellow; min-height: 20vh; background-color: white;"> 
+                                        <div >
+                                            <img height="100" width="150" src="img/logo/logo will(1).jpg" alt="logo" />
+                                        </div><!-- end of logo frame -->
+                            </div><!-- end of logo section -->
+                            <!-- end of logo section-->
+                            <!-- begin the apartments -->
+                            <div  class="properties-section" style="font-size: 12px;">
+                                        <!--<div class="apartment-mini" id="navRight" ng-mouseenter="doHover()">
+                                            <a ui-sref="apartment"><h3>PARK DEARBORN</h3></a>
+                                        </div>-->
+                                        <h1 style="border: 2px solid brown;"><span style="padding-left: 5px; font-family: Open Sans;color: rgb(101,0,0);">Chicago</span></h1>
+                                        <ul class="sidebar-apartments" style="border: 5px solid green;">
+                                            <a href="index.html#!/apartment/1"><li class="a" id="navRight" ng-mouseenter="doHover()"><h3>PARK DEARBORN</h3></li></a>
+                                            <a href="index.html#!/apartment/2"><li class="a" id="navRight" ng-mouseenter="doHover()"><h3>DEARBORN NORTH</h3></li></a>
+                                            <a href="index.html#!/apartment/3"><li class="a" id="navRight" ng-mouseenter="doHover()"><h3>DEARBORN PLAZA</h3></li></a>
+                                            <a href="index.html#!/apartment/4"><li class="a" id="navRight" ng-mouseenter="doHover()"><h3>LASALLE FLATS</h3></li></a>
+                                        </ul>
+                                        <h1><span style="padding-left: 5px; font-family: Open Sans;color: rgb(101,0,0);">Des Plaines</span></h1>
+                                        <ul class="sidebar-apartments">
+                                            <li class="a" ><h3>PARK RIDGE <br><br>COMMONS</h3></li>
+                                            <li class="a" ><h3>SWAN CREEK</h3></li>
+                                        </ul>
+                                        <h1><span style="padding-left: 5px; font-family: Open Sans;color: rgb(101,0,0);">Madison</span></h1>
+                                        <ul class="sidebar-apartments">
+                                            <li class="a" ><h3>HIGH POINT <br><br>WOODS</h3></li>
+                                            <li class="a" ><h3>APARTMENT 360</h3></li>
+                                        </ul>
+                            </div><!-- end of properties section-->
+                                <!-- begin the footer-->
+                                
+                            <div class="footer">
+                                        <br>
+                                        <br>
+                                        <span style="font-size: 12px;"> H.A. Langer & Associates  </span>
+                                        <br>
+                                        created in chicago &copy 2017 <br>all rights reserved
+                                        <h4><a ui-sref="login">residents</a> / <a ui-sref="contact">contact</a> / <a ui-sref="properties">home</a></h4>
+                            </div><!--end --footer-->
+                </div><!-- end side bar-->
+            </div><!--end side bar container-->
+
+
+                    <div class="main-content" style="border: 5px solid yellow;">
+                                
+                            <div class="navctrl" ng-controller="navController">
+                                 
+
+
+
+                                    <nav  id="navigation" class="" ng-mouseleave="doSomethingElse()" >
+                                                    
+                                                       <div class="col" ng-class="{active: isActive('/properties')}"><a ui-sref="properties">properties</a></div>
+                                                        <div class="col"  ng-click="showMessage = !showMessage"  ng-class="{active: isActive('/floorplans')}"><a ui-sref="floorplans">floorplans</a></div>
+                                                        <!--<li ng-class="{active: isActive('/pictures')}"><a ui-sref="pictures">pictures</a></li>-->
+                                                        <div class="col"  ng-click="showMessage = !showMessage"  ng-class="{active: isActive('/appointment')}"><a ui-sref="appointment">appointment</a></div>
+                                                        <div class="col"  ng-mouseenter="doSomethingElse()" ng-class="{active: isActive('/login')}"><a ui-sref="login">residents</a></div>
+                                                        <div class="col"  ng-mouseenter=""  ng-class="{active: isActive('/contact')}"><a ui-sref="contact">contact</a>
+                                                      </div> 
+                                    </nav>
+                                
+                       </div><!-- end nav-container-->
+                           
+                            
+                            {{{body}}}
+                                    
+                                
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="LangerApplication/LangerApplication/plugins/jquery.datetimepicker.min.css"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="LangerApplication/LangerApplication/plugins/jquery.datetimepicker.min.css"></script>
+<script src="LangerApplication/LangerApplication/plugins/jquery.datetimepicker.full.js"></script>
+
+ <script>
+        function initMap() {
+            let options = {
+                zoom:8,
+                center: {lat:41.9057, lng:-87.6303}
+            }
+
+            let map = new google.maps.Map(document.getElementById('map'), options);
+
+            let marker = new google.maps.Marker({
+                position: {lat:41.9057, lng:-87.6303},
+                map:map,
+                icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            });
+
+            let infoWindow = new google.maps.InfoWindow({
+                content:'<h5>1260 North Dearborn</h5>'
+            });
+
+            marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhNlJ3iC_iaAaqM2BpAZsoaChyscYvyzo&callback=initMap"
+    async defer></script>
+
+<script> 
+    $(document).ready (function () {
+$rootScope.$on('$stateChangeSuccess', function() {
+   document.body.scrollTop = document.documentElement.scrollTop = 0;
+});
+
+        //$("#pickdate").datepicker();
+        $("#pickdate").datepicker();
+        var test = $("#floorplan-z");
+        var hdr = 100;
+        $(window).scroll(function() {
+            if( $(this).scrollTop() > hdr ) {
+                $("#floorplan-z").removeClass("search-results");
+                $("#floorplan-z").addClass("results-search-hidden-nav");
+    //stickySearch.classList.remove(search-results);
+    //stickySearch.classList.add(.results-search-hidden-nav);
+    //loorplanSearch.classList.remove(resultsSearch);
+
+    //loorplanSearch.classList.add(resultsSearchHidden);
+            } else {
+                $("#floorplan-z").addClass("search-results");
+   //floorplanSearch.classList.remove(resultsSearchHidden);
+            }
+    });
+    
+
+          $("#navRight").mouseover(function() {
+    $(this).addClass("navRightBorder");
+  }).mouseout(function(){
+    $(this).removeClass("navRightBorder");
+  });
+
+
+        
+});
+
+function swap(my_image)
+        {
+            var smallImage = my_image;
+            var largeImage = document.getElementById('swapImage');
+            largeImage.src = smallImage.src;
+        }
+
+
+function toggleSidebar() {
+    'use strict';
+    var sidebar = document.getElementById("please").style.left = "0px";
+    var overlay = document.getElementById("cover");
+    overlay.classList.remove("overlay");
+    document.getElementById("please").classList.toggle("active");
+    var body = document.getElementById("cover");
+    body.classList.add("overlay");
+    body.classList.remove("no-overlay");
+    document.getElementsByTagName("body")[0].style = "overflow-y: hidden;";
+}
+
+function changer() {
+    let x = document.getElementById("mapBox");
+    console.log(x);
+    x.classList.remove("whiteBackgroundMaroonTrim");
+    x.classList.add("maroonBackgroundWhiteTrim");
+}
+
+function changeBack() {
+    let x = document.getElementById("mapBox");
+    console.log(x);
+    x.classList.remove("maroonBackgroundWhiteTrim");
+    x.classList.add("whiteBackgroundMaroonTrim");
+}
+
+function overlayHide() {
+    'use strict';
+    var sidebar = document.getElementById("please").style.left = "-400px";
+    document.getElementsByTagName("body")[0].style = "overflow-y: scroll;";
+    
+    //remove class overlay
+    var overlay = document.getElementById("cover");
+    overlay.classList.remove("overlay");
+}
+    
+</script>
+
+<!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhNlJ3iC_iaAaqM2BpAZsoaChyscYvyzo&callback=initMap"
+    async defer></script>
+
+    -->
+                                </body>
+                            </html>

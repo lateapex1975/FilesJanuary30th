@@ -1,0 +1,17 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<div style="height: 1000px;" ng-app="">
+<form action="/test/submit" method="post">
+                                 <input placeholder="First name:" type="text" ng-model="formModel.fname"><br>
+                                <input placeholder="Last name:" type="text" ng-model="formModel.lname"><br>
+             
+                                <input placeholder="Email:" type="text" name="email"><br>
+                                <input placeholder="Phone:" ng-model="formModel.phone" type="text"><br>
+                                <input type="submit" style="border-radius: 0; width: 100px; height: 40px; font-size: 20px;font-family: serif; color: white; background-color: rgb(101, 0, 0);" 
+                                value="submit" class="">
+                          </form>
+                          {{title}}
+
+                       name:   <input type="text" ng-model="name">
+                       
+</div>

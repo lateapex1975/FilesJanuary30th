@@ -1,0 +1,498 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  font-size: 14px;
+  line-height: 1.45;
+  font-family: san-serif;
+  padding: 0;
+  margin: 0; }
+
+
+#features ul {
+  display: block;
+}
+
+.apartment-details-icon {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.icon-row-container {
+  /*border: 5px solid red;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*margin: 20px;*/
+
+}
+
+#wifi-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/if_icon-wifi_211944.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#deck-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/deck.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#onsite-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/onsite.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#globe-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/globe.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#office-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/office.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#staff-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/staff.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#bike-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/bike.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#weight-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/weight-room.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#washer-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/washer.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#elevators-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/elevators.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#maintenance-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/maintenance.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#air-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/air.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#staff {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/staff.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#dishwasher-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/dishwasher.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#park-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/parking.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#cat-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/cats.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#cable-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/cable.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#drycleaning-icon {
+  height: 53px;
+  padding: 20px;
+  background-image: url("../img/feature-icons/drycleaning.png");
+  /*background-color: red;*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.apartment-info {
+  padding: 1em; }
+
+.property-grid-item img {
+  max-width: 100%; }
+
+.apartment-details-container {
+  display: flex;
+  justify-content: space-between; }
+
+.apartment-details {
+  background-color: rgb(101, 0, 0);
+  flex: 1;
+  display: flex;
+  color: white;
+  height: 420px; 
+  width: 600px;}
+
+.apartment-image {
+  height: 400px;
+  background-color: #e6e6e6;
+  flex: 1; }
+
+/*small screens */
+@media only screen and (max-width: 1023px) {
+
+ 
+  header {
+    height: 60px;
+    background-color: rgb(101, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    min-width: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 10002; }
+
+  header:first-child {
+    padding-left: 2em; }
+
+  .menu-bar {
+    height: 25px;
+    max-width: 35px;
+    cursor: pointer; }
+
+  .bar {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0; }
+
+
+ 
+
+  button {
+    background-color: #003059;
+    color: white;
+    padding: 8px 8px;
+    cursor: pointer;
+    border: none; }
+
+  .btn {
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    cursor: pointer; }
+
+  .side-bar-container {
+    position: fixed;
+    left: -400px;
+    top: 0;
+    bottom: 0;
+    z-index: 10003;
+    min-width: 25vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    flex: none;
+    transition: all 500ms linear; }
+
+  .side-bar-container.active {
+    left: 0px; }
+
+  .overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: grey;
+    opacity: .5;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    z-index: 10003; }
+
+  .site-wrapper {
+    flex-direction: column; }
+
+  .apartment-details-container {
+    display: flex;
+    flex-direction: column; } }
+/*Large Screens*/
+@media only screen and (min-width: 1024px) {
+  header {
+    display: none; }
+
+  .side-bar {
+    position: fixed;
+    height: 100vh;
+    max-width: 20vw;
+    overflow-y: scroll;
+     }
+
+  .side-bar-container {
+    flex: 20vw; }
+
+  .main-content {
+    flex: 80vw; }
+
+  .property-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  .properties-section .apartment-mini p {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 800;
+    line-height: 22px;
+    /*font-family: Open sans;*/
+    font-family: 'Crimson Text', sans-serif;
+    color: rgb(101, 0, 0); }
+
+  .property-grid-item {
+    margin-right: 1em;
+    background-color: white; }
+
+  .apartment-image {
+    overflow: hidden; }
+
+  .apartment-details {
+    padding: 2px;
+  }
+
+  .form-details-container {
+    display: flex; }
+
+  .apartment-aside {
+    margin: 1em; }
+
+  .apartment-aside p {
+    font-size: 18px; }
+
+  .container {
+    width: 100%;
+    height: 40px;
+    margin-right: .5em;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    padding: 1em; }
+
+  .col {
+    width: 200px;
+    height: 40px;
+    margin-right: .5em;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', sans-serif;
+    color: grey;
+    letter-spacing: 5px;
+    font-weight: 800;
+    text-align: center;
+    border: 1px solid grey; }
+
+  .col2 {
+    background-color: yellow;
+    width: 200px;
+    height: 40px;
+    margin-right: 1em;
+    flex-direction: row;
+    flex-direction: column; 
+    color: grey;} 
+.site-wrapper {
+  display: flex; }
+
+.form {
+  border: 5px solid white;}
+
+.form-details-container {
+  margin: 1em; }
+
+.map {
+  height: 300px;
+  width: 400px;
+  overflow: hidden; }
+
+.side-bar {
+  background-color: rgb(101, 0, 0);
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column; }
+
+.logo-frame {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.main-content {
+  background-color: white;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+.property-grid-item {
+  margin-bottom: 1rem;
+  margin: 1em; }
+
+.margin-zero {
+  margin: 1em; 
+  text-shadow: 1px 1px 1px rgba(0,0,0,.004);
+}
+
+.apartments {
+  font-size: .75em;
+  /*font-family: 'Crimson Text', sans-serif;
+  font-family: 'Lato', sans-serif;*/
+  font-weight: 900;
+  color: #003059;
+  flex: 1; }
+
+.properties-section {
+  background-color: white; }
+
+.properties-section .apartment-mini:last-child {
+  border-bottom: 1px solid #ECEBEB; }
+
+#second-section {
+  padding-left: 2em;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 800;
+  padding-top: 35px;
+  padding-right: 20px;
+  line-height: 22px;
+  /*font-family: Open sans;*/
+  font-family: 'Crimson Text', sans-serif;
+  color: rgb(101, 0, 0); }
+
+.logo-frame {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: white; }
+
+.logo-section {
+  background-color: white; }
+
+.apartment-mini {
+  padding-left: 5px;
+  border-top: 1px solid #ECEBEB;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: 'Crimson Text', sans-serif;
+  color: rgb(101, 0, 0); }
+
+a {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none;
+  color: rgb(101, 0, 0); }
+
+h3 {
+  font-sze: 50px; }
+
+.inquires {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 800;
+  padding-top: 30px;
+  line-height: 22px;
+  /* font-family: Open sans; */
+  font-family: 'Crimson Text', sans-serif;
+  color: rgb(101, 0, 0); }
+
+.footer {
+  font-size: 12px;
+  background-color: white;
+  padding-left: 5px;
+  color: rgb(101, 0, 0);
+  height: 25vh; }
+
+/*# sourceMappingURL=apartmentStyle.css.map */
